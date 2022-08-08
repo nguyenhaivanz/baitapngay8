@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyển đổi tiền tệ</title>
+    <script src="chuyendoitiente1.js"></script>
+</head>
+<body>
+    <table width="50%">
+        <tr>
+        <th>Amount</th>
+        <th>From Currency</th>
+        <th>To Currency</th>
+        <th></th>
+        </tr>
+        <tr>
+            <td><input type="text" id="input"></td>
+            <td> <select name="country" id="from">
+                <option value="1">VND</option>
+                <option value="23000">USD</option>
+                <option value="23800">EURO</option>
+            </select>
+            </td>
+            <td><select name="country" id="to">
+                <option value="1">VND</option>
+                <option value="23000">USD</option>
+                <option value="23800">EURO</option>
+            </select>
+            </td>
+           <td> <button type="button" id="convert" onclick="convert()">convert</button>
+           </td>
+            <td>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <p type="text" id="result1"> </p>
+<script src="chuyendoitiente1.js">
+</script>
+</body>
+</html>

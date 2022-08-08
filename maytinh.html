@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>máy tính</title>
+</head>
+<body>
+<input type="number" id="so_1">
+<input type="number" id="so_2">
+<button onclick="add()">cộng</button>
+<button onclick="convert()">trừ</button>
+<p id="result">đây là kết quả</p>
+</body>
+</html>
+<script>
+    function add() {
+        let so_1 = document.getElementById('so_1').value
+        let so_2 = document.getElementById('so_2').value
+        let result = parseInt(so_1) + parseInt(so_2);
+        document.getElementById('result').innerHTML= "Result : " + result;
+    }
+    function convert() {
+        let so_1 = document.getElementById('so_1').value
+        let so_2 = document.getElementById('so_2').value
+        let result = parseInt(so_1) - parseInt(so_2)
+        document.getElementById('result').innerHTML = "Result : " + result;
+    }
+</script>
